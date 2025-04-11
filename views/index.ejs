@@ -12,7 +12,7 @@
     <div class="heroes">
         <% if(locals.heroes) { %>
         <img src="<%= heroes.image.url %>" alt=" <%= heroes.name %>">
-        <h2><%= heroes.name %></h2>
+        <h2><%= heroes.biography["full-name"] %>/<%= heroes.name %></h2>
         <% } %>
     </div>
     <a href="/randomheroes"><p>Random heroes</p></a>
