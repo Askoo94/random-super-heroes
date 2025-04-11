@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's your superhero</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <h1>Who's your superhero ?</h1>
+    <div class="heroes">
+        <% if(locals.heroes) { %>
+        <img src="<%= heroes.image.url %>" alt=" <%= heroes.name %>">
+        <h2><%= heroes.name %></h2>
+        <% } %>
+    </div>
+    <a href="/randomheroes"><p>Random heroes</p></a>
+
+    
+</body>
+</html>
